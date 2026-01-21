@@ -1,0 +1,35 @@
+{
+  "name": "oakstcglounge",
+  "version": "1.0.0",
+  "description": "Pokemon TCG Fullstack Application",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eanth/OaksTCGLounge.git"
+  },
+  "keywords": [
+    "Pokemon",
+    "TCG"
+  ],
+  "author": "Anthony Elia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eanth/OaksTCGLounge/issues"
+  },
+  "homepage": "https://github.com/eanth/OaksTCGLounge#readme",
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.0.9",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "pg": "^8.17.2",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.16.0"
+  }
+}
