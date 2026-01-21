@@ -70,8 +70,5 @@ export async function seedDatabase(pool: Pool) {
         console.log(`Base set db seed completed ${count} cards are now registered`)
     } catch (err) {
         console.error("Error occured during seeding attempt:", err);
-    } finally {
-        await pool.end();
-        process.exit(0);
     }
 }
