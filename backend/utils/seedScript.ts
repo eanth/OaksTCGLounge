@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import path from 'path';
 import 'dotenv/config';
 import { fileURLToPath } from 'url';
-import type { PokemonCard } from './types.ts';
+import type { PokemonCard } from '../types/pokemonCard.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -37,7 +37,7 @@ export async function seedDatabase(pool: Pool) {
             `);
 
         console.log(path.join(__dirname, 'base-set-seed.json'));
-        const rawData = fs.readFileSync(path.join(__dirname, 'base-set-seed.json'), 'utf-8');
+        const rawData = fs.readFileSync(path.join(__dirname, './base-set-seed.json'), 'utf-8');
         const cards: PokemonCard[] = JSON.parse(rawData);
 
         for (const card of cards) {

@@ -1,23 +1,21 @@
 import express from 'express';
-import { Pool } from 'pg';
+import { pool } from './backend/config/db.js'
 import 'dotenv/config';
-import { seedDatabase } from './backend/seedScript.js';
+import { seedDatabase } from './backend/utils/seedScript.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import routes from './backend/routes/routes.js';
 
 const app = express();
+
 const PORT = Number(process.env.EXPRESS_PORT) || 5000;
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const pool = new Pool({
-    user: process.env.POSTGRES_USER,
-    host: process.env.POSTGRES_HOST,
-    database: process.env.POSTGRES_DB,
-    password: process.env.POSTGRES_PASSWORD,
-    port: Number(process.env.POSTGRES_PORT),
-});
+app.use(express.static(path.join(__dirname, '../public')));
+app.use(routes);
+
 
 async function startServer() {
     try {
@@ -27,7 +25,7 @@ async function startServer() {
         await seedDatabase(pool);
 
         app.listen(PORT, () => {
-            console.log(`Oak's TCG Cafe server is now live at http://localhost:${PORT}`);
+            console.log(`Oak's TCG Lounge is now live at http://localhost:${PORT}`);
         })
     } catch (error) {
         console.error("Server failed to start:", error);
@@ -36,11 +34,3 @@ async function startServer() {
 }
 
 startServer();
-
-app.use(express.static(path.join(__dirname, '../public')));
-
-
-app.get('/api/cards', async(req, res) => {
-    const result = await pool.query('SELECT * FROM cards ORDER BY id_no ASC');
-    res.json(result.rows);
-})
