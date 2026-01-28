@@ -7,7 +7,7 @@ export interface PokemonCard{
     rarity: string;
     image: string;
 
-    energy?: string;
+    energy_type?: string;
     hp?: string;
     attacks?: Attack[];
     description?: string;

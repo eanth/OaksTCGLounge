@@ -1,10 +1,10 @@
 import express from 'express';
-import { pool } from './backend/config/db.js'
+import { pool } from './src/config/db.js'
 import 'dotenv/config';
-import { seedDatabase } from './backend/utils/seedScript.js';
+import { seedDatabase } from './src/utils/seedScript.js';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import routes from './backend/routes/routes.js';
+import routes from './src/routes/routes.js';
 
 const app = express();
 

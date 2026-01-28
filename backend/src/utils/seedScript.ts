@@ -58,7 +58,7 @@ export async function seedDatabase(pool: Pool) {
                 parseInt(card.id_no),
                 card.set_no,
                 card.name,
-                card.energy || null,
+                card.energy_type || null,
                 card.hp ? parseInt(card.hp) : null,
                 card.rarity,
                 card.image
