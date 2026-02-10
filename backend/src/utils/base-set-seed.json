@@ -1,0 +1,122 @@
+[
+    {
+        "set_name":"base",
+        "type": "pokemon",
+        "id_no": "1",
+        "set_no": "1/102",
+        "name": "Alakazam",
+        "energy_type": "Psychic",
+        "hp": "80",
+        "rarity": "Rare Holo",
+        "image": "/images/card_images/base_images/1.jpg",
+        "attacks": []
+    },
+    {
+        "set_name":"base",
+        "type": "pokemon",
+        "id_no": "2",
+        "set_no": "2/102",
+        "name": "Blastoise",
+        "energy_type": "Water",
+        "hp": "100",
+        "rarity": "Rare Holo",
+        "image": "/images/card_images/base_images/2.jpg",
+        "attacks": []
+    },
+    {
+        "set_name":"base",
+        "type": "pokemon",
+        "id_no": "3",
+        "set_no": "3/102",
+        "name": "Chansey",
+        "energy_type": "Colorless",
+        "hp": "120",
+        "rarity": "Rare Holo",
+        "image": "/images/card_images/base_images/3.jpg",
+        "attacks": []
+    },
+    {
+        "set_name":"base",
+        "type": "pokemon",
+        "id_no": "4",
+        "set_no": "4/102",
+        "name": "Charizard",
+        "energy_type": "Fire",
+        "hp": "120",
+        "rarity": "Rare Holo",
+        "image": "/images/card_images/base_images/4.jpg",
+        "attacks": []
+    },
+    {
+        "set_name":"base",
+        "type": "pokemon",
+        "id_no": "5",
+        "set_no": "5/102",
+        "name": "Clefairy",
+        "energy_type": "Colorless",
+        "hp": "40",
+        "rarity": "Rare Holo",
+        "image": "/images/card_images/base_images/5.jpg",
+        "attacks": []
+    },
+    {
+        "set_name":"base",
+        "type": "pokemon",
+        "id_no": "6",
+        "set_no": "6/102",
+        "name": "Gyarados",
+        "energy_type": "Water",
+        "hp": "100",
+        "rarity": "Rare Holo",
+        "image": "/images/card_images/base_images/6.jpg",
+        "attacks": []
+    },
+    {
+        "set_name":"base",
+        "type": "pokemon",
+        "id_no": "7",
+        "set_no": "7/102",
+        "name": "Hitmonchan",
+        "energy_type": "Fighting",
+        "hp": "70",
+        "rarity": "Rare Holo",
+        "image": "/images/card_images/base_images/7.jpg",
+        "attacks": []
+    },
+    {
+        "set_name":"base",
+        "type": "pokemon",
+        "id_no": "8",
+        "set_no": "8/102",
+        "name": "Machamp",
+        "energy_type": "Fighting",
+        "hp": "100",
+        "rarity": "Rare Holo",
+        "image": "/images/card_images/base_images/8.jpg",
+        "attacks": []
+    },
+    {
+        "set_name":"base",
+        "type": "pokemon",
+        "id_no": "9",
+        "set_no": "9/102",
+        "name": "Magneton",
+        "energy_type": "Electric",
+        "hp": "60",
+        "rarity": "Rare Holo",
+        "image": "/images/card_images/base_images/9.jpg",
+        "attacks": []
+    },
+    {
+        "set_name":"base",
+        "type": "pokemon",
+        "id_no": "10",
+        "set_no": "10/102",
+        "name": "Mewtwo",
+        "energy_type": "Psychic",
+        "hp": "60",
+        "rarity": "Rare Holo",
+        "image": "/images/card_images/base_images/10.jpg",
+        "attacks": []
+    }
+]

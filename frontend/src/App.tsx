@@ -6,7 +6,6 @@ import './App.css'
 
 function App() {
   
-  const [count, setCount] = useState(0)
   const [cards, setCards] = useState([])
 
   async function BaseSetCards() {
@@ -31,20 +30,18 @@ function App() {
   return (
     <>
       <div>
-          <img src={greatBall} className="logo" alt="Vite logo" />
+          <img src={greatBall} className="logo" alt="Vite logo" onClick={() => {setCards([])}} />
       </div>
       <h1>Oak's TCG Lounge</h1>
       <div className="card">
-        <button onClick={BaseSetCards}>
-          Get Base Set Cards
-        </button>
+        <img className='pack' src={"./public/images/BaseCardPack.jpg"} onClick={BaseSetCards} />
       </div>
-      <ol>
+      <ol >
       {cards.map((card) =>{
         return (   
-          <>      
+          <li key={card.id} style={{display:"inline-block"}}>      
           <img height={"275px"} src={"http://localhost:5000"+card.image} style={{padding:"10px"}}></img>
-          </>
+          </li>
         )
       })}
       </ol>
